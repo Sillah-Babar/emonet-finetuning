@@ -1,0 +1,11 @@
+
+# default
+.vscode
+.venv
+__pycache__
+
+# custom
+media/*
+!media/images
+runs/**/*.pth
+.old
