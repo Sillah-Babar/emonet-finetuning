@@ -43,7 +43,7 @@ Simply run **`FaceApp.exe`** to start the demo.
 
 ### Requirements
 
-* **Python 3.12**
+* Developed on **Python 3.12**, other version might work.
 * **Windows 11** (developed and tested)
 * A working webcam (or a virtual camera such as **OBS Virtual Camera**)
 
