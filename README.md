@@ -29,4 +29,12 @@ A **real-time interactive demo** showcases valence–arousal estimation directly
 A detailed list of dependencies and installation instructions will be included in each submodule’s README.
 
 
+---
 
+## License & Citations
+
+If you use this code in a publication or project, please cite the original EmoNet paper and follow all related license terms.
+
+> **“Estimation of continuous valence and arousal levels from faces in naturalistic conditions”**
+> Antoine Toisoul, Jean Kossaifi, Adrian Bulat, Georgios Tzimiropoulos, and Maja Pantic,
+> *Nature Machine Intelligence*, January 2021.
