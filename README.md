@@ -14,8 +14,6 @@ The workflow integrates **affective modeling**, **evaluation**, and a **real-tim
 
 
 
-## Evaluation Metrics and Visualization
-
 
 
 
