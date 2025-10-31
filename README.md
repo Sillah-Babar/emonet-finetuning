@@ -19,11 +19,11 @@ The workflow integrates **affective modeling**, **evaluation**, and a **real-tim
 
 ---
 
-## UI and Demo
+## UI and Demo (by Chengyi Su)
 
 A **real-time interactive demo** showcases valence–arousal estimation directly from webcam input. You can check a showcase video here: [demo](https://www.youtube.com/watch?v=waxnplqpPgs)
 
-**For demo details**, including setup instructions and usage guide, please refer to:  [`demo/README.md`](./demo/README.md)
+**For demo details**, including setup instructions and usage guide, please refer to:  [`demo/README.md`](./demo/README.md) Be sure to run from the root of *that* directory. 
 
 
 
