@@ -12,12 +12,12 @@ The workflow integrates **affective modeling**, **evaluation**, and a **real-tim
 
 `emodataset-on-emonet/` contains a copy of the repo used for fine-tuning EmoNet on Emodataset, as well as the code for emonet model itself (unmodified, except to fix pylance warnings). It also contains some saved parameters, some csv's of fine-tuning and some graphics. Follow the [`README.md`](./emodataset-on-emonet/README.md) and be sure to run from the root of *that* directory. 
 
----
+
 
 ## Evaluation Metrics and Visualization
 
 
----
+
 
 ## UI and Demo (by Chengyi Su)
 
