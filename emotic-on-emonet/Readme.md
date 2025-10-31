@@ -1,4 +1,6 @@
-EmoNet: Multi-label Emotion Recognition on EMOTIC Dataset
+**EmoNet: Multi-label Emotion Recognition on EMOTIC Dataset**
+
+
 A PyTorch implementation of EmoNet with architectural variations for multi-label emotion recognition, trained on the EMOTIC dataset. This model predicts 26 discrete emotions along with continuous valence and arousal values.
 Overview
 This repository provides:
@@ -67,16 +69,6 @@ Loads raw valence and arousal values
 Applies min-max normalization to [-1, 1] range
 Creates normalized dataset CSV files
 
-Configuration:
-Update paths in preprocessing.py:
-pythonCopydata_path = Path('/path/to/emotic/archive_emot/annots_arrs')
-img_dir = Path('/path/to/emotic/archive_emot/img_arrs/')
-Output:
-
-normalized_dataset_train.csv
-normalized_dataset_val.csv
-normalized_dataset_test.csv
-
 
 Model Training
 The model architecture and training procedure are provided in emonet-training-from-scratch.ipynb.
@@ -87,29 +79,6 @@ Dual-head output:
 
 Classification head: 26 discrete emotions (sigmoid activation)
 Regression head: Valence and Arousal (tanh activation)
-
-
-Loss functions:
-
-Asymmetric Loss for multi-label classification
-Smooth L1 Loss for regression
-Combined weighted loss
-
-
-
-Training Configuration
-Key hyperparameters:
-pythonCopybatch_size = 32
-learning_rate = 1e-4
-epochs = 50
-optimizer = AdamW
-scheduler = ReduceLROnPlateau
-Data augmentation:
-
-Random horizontal flip
-Color jitter
-Random rotation
-Normalization (ImageNet statistics)
 
 
 Model Weights
@@ -153,3 +122,4 @@ Classification metrics summary
 
 
 Confusion Heatmap: Emotion co-occurrence matrix
+
