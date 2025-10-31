@@ -36,4 +36,4 @@ Multi-label emotion classification with continuous affect prediction
 Comprehensive evaluation and visualization tools
 Pre-trained model weights
 
-Please refer to tge Readme.md inside the emotic folder for more detailed instructions on how an inference.
+Please refer to tge Readme.md [`README.md`](./emotic-on-emonet/Readme.md) for more detailed instructions on how an inference.
