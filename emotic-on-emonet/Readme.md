@@ -1,4 +1,5 @@
-**EmoNet: Multi-label Emotion Recognition on EMOTIC Dataset**
+
+### EmoNet: Multi-label Emotion Recognition on EMOTIC Dataset (sillah babar)
 
 
 A PyTorch implementation of EmoNet with architectural variations for multi-label emotion recognition, trained on the EMOTIC dataset. This model predicts 26 discrete emotions along with continuous valence and arousal values.
@@ -12,7 +13,7 @@ Comprehensive evaluation and visualization tools
 Pre-trained model weights
 
 
-Dataset
+## Dataset
 This project uses the EMOTIC dataset available on Kaggle.
 The dataset includes:
 
@@ -20,8 +21,9 @@ The dataset includes:
 Continuous valence and arousal annotations
 Context and body images with facial crops
 
+https://www.kaggle.com/datasets/magdawjcicka/emotic
 
-Installation
+## Installation
 Requirements
 Create a virtual environment and install dependencies:
 bashCopypip install -r requirements.txt
@@ -38,13 +40,13 @@ seaborn>=0.11.0
 scikit-learn>=0.24.0
 tqdm>=4.62.0
 
-Preprocessing Pipeline
+## Preprocessing Pipeline
 Step 1: Add Face Visibility Column
 Use face_visibility.py to compute face visibility scores for all facial crops:
 bashCopypython face_visibility.py
 This script:
 
-Uses MediaPipe Face Mesh to detect facial landmarks
+## Uses MediaPipe Face Mesh to detect facial landmarks
 Computes visibility percentage (0-100%) based on detected landmarks
 Adds Face_Visibility column to the annotation CSV
 Generates distribution histogram
@@ -60,17 +62,17 @@ Updated CSV with Face_Visibility column
 Visualization of face visibility distribution
 
 
-Step 2: Normalize Valence and Arousal
+## Step 2: Normalize Valence and Arousal
 Use preprocessing.py to normalize continuous affect values:
 bashCopypython preprocessing.py
 This script:
 
-Loads raw valence and arousal values
+## Loads raw valence and arousal values
 Applies min-max normalization to [-1, 1] range
 Creates normalized dataset CSV files
 
 
-Model Training
+## Model Training
 The model architecture and training procedure are provided in emonet-training-from-scratch.ipynb.
 Architecture Highlights
 
@@ -81,12 +83,13 @@ Classification head: 26 discrete emotions (sigmoid activation)
 Regression head: Valence and Arousal (tanh activation)
 
 
-Model Weights
+## Model Weights
 Download pre-trained weights from Google Drive:
 Model Checkpoint
 Place the downloaded best_model.pth in your working directory.
+https://drive.google.com/drive/folders/1XJgqnhINNzQvlqJiM6nTTwqtHcrIJZog?usp=sharing
 
-Inference and Evaluation
+## Inference and Evaluation
 Running Predictions
 Use the provided notebook or run inference directly:
 pythonCopyfrom inference_visualization import review_predictions_with_visualization
@@ -100,7 +103,7 @@ results = review_predictions_with_visualization(
     detailed_samples=20,
     sort_by='random'  # Options: 'random', 'best', 'worst', 'confidence'
 )
-Evaluation Metrics
+## Evaluation Metrics
 The evaluation pipeline computes:
 
 Per-emotion precision, recall, F1-score
@@ -109,7 +112,7 @@ Mean Absolute Error (MAE) for valence/arousal
 Confusion matrices and co-occurrence analysis
 
 
-Visualization Outputs
+## Visualization Outputs
 Generated visualizations include:
 
 Grid View: Multiple predictions with ground truth comparison
